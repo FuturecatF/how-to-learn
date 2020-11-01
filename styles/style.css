@@ -9,6 +9,7 @@
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
   display: flex;
   flex-direction: column;
+
 }
 
 .table_centered-block {
@@ -66,6 +67,10 @@
   z-index: 1;
 }
 
+.header__link::after {
+  content: " \2192";
+}
+
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
@@ -87,17 +92,15 @@
 
 /* раздел description */
 .description {
-
-
+  display: flex;
 }
 
 .two-columns {
   width: 80%;
-  margin: 100px auto 0;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-
-
+  margin: 100px auto 0;
 }
 
 .two-columns__brief {
@@ -107,7 +110,6 @@
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
-
 }
 
 .two-columns__main-text {
@@ -134,32 +136,35 @@
 
 /* раздел digits */
 .digits {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
 }
 .section__title {
   width: 60%;
-  display: flex;
-  justify-content: center;
   margin: 100px auto 0;
+  text-align: center;
   line-height: 1.15em;
   font-size: 60px;
   font-weight: bold;
+  border: 1px solid red;
 }
 
 .section__subtitle {
   width: 60%;
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin: 20px auto 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  border: 1px solid red;
 }
 
 .table {
   width: 1100px;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -190,24 +195,23 @@
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-color: #f2f2f2;
+  background-size: 867px 637px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .feynman__title {
   width: 648px;
-  display: flex;
-  justify-content: center;
-  margin: 90px auto 0;
+  text-align: center;
   line-height: 1.15em;
   font-size: 120px;
   font-weight: bold;
   z-index: 1;
-  text-align: center;
+  margin: 90px auto 0;
 }
 
 .feynman__subtitle {
-  width: 600px;
-  display: flex;
-  justify-content: center;
   margin: 70px auto 0;
   line-height: 51px;
   font-size: 36px;
@@ -227,7 +231,12 @@
   z-index: 1;
 }
 
+.feynman__link::after {
+  content: " \2192";
+}
+
 /* раздел kaufman */
+
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;

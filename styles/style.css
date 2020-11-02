@@ -127,6 +127,10 @@
   font-weight: normal;
 }
 
+.two-columns__paragraph:last-child {
+  margin: 0;
+}
+
 
 .two-columns_span-accent {
   line-height: 34px;

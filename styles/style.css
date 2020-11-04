@@ -304,6 +304,7 @@
   display: flex;
   justify-content: space-between;
   margin: 60px 0 40px;
+  border: 1px solid red;
 }
 
 .logo_place_footer {
@@ -313,12 +314,21 @@
 .footer__column {
   display: flex;
   flex-direction: column;
+  border: 1px solid red;
 }
 
 .footer__column_content_copyright {
   flex-basis: 711px;
   justify-content: space-between;
   margin: 0;
+}
+
+.footer__column_content_info {
+  margin: 0 0 16px;
+}
+
+.footer__column_content_social {
+  margin: 0 0 16px;
 }
 
 .footer__author {
@@ -345,10 +355,6 @@
   color: white;
   padding: 0;
   list-style: none;
-}
-
-.footer__column-links:last-child {
-  margin: 0 0 16px;
 }
 
 .footer__social-icon {

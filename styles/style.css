@@ -35,7 +35,7 @@
 }
 
 .header__title {
-  width: 730px;
+  max-width: 730px;
   margin-left: 64px;
   display: flex;
   align-items: center;
@@ -46,7 +46,7 @@
 }
 
 .header__subtitle {
-  width: 388px;
+  max-width: 388px;
   position: absolute;
   bottom: 30px;
   left: 64px;
@@ -105,7 +105,7 @@
 }
 
 .two-columns__brief {
-  width: 175px;
+  max-width: 175px;
   margin: 0;
   line-height: 1.2em;
   font-size: 18px;
@@ -130,7 +130,7 @@
   margin: 0;
 }
 
-.two-columns_span-accent {
+.two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: bold;
@@ -141,7 +141,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 100px 0 100px;
 }
 
 .section__title {
@@ -164,12 +163,12 @@
 
 .table {
   width: 1100px;
-  list-style: none;
-  padding: 0;
   margin: 0 auto 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 0;
+  list-style: none;
 }
 
 .table__cell {
@@ -194,7 +193,7 @@
 /* раздел feynman */
 .feynman {
   position: relative;
-  height: 790px;
+  height: 790px; /* тут явно указана высота по брифу */
   background-image: url(../images/feynman.png);
   background-position: 0 100%;
   background-repeat: no-repeat;
@@ -206,7 +205,7 @@
 }
 
 .feynman__title {
-  width: 648px;
+  max-width: 648px;
   line-height: 1.15em;
   font-size: 120px;
   font-weight: bold;
@@ -251,6 +250,8 @@
 }
 
 .kaufman__triangle {
+  background-image: url('../images/kaufman-triangle.svg');
+  background-size: 877px 877px;
   width: 877px;
   height: 877px;
   position: absolute;
@@ -309,10 +310,13 @@
   margin: 0;
 }
 
-.footer__column_content_copyright {
+.footer__column {
   display: flex;
-  flex-basis: 711px;
   flex-direction: column;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
   justify-content: space-between;
   margin: 0;
 }
@@ -323,11 +327,6 @@
   font-size: 18px;
   font-weight: normal;
   margin: 18px 0;
-}
-
-.footer__column_content_info {
-  display: flex;
-  flex-direction: column;
 }
 
 .footer__column-heading {
@@ -344,12 +343,12 @@
   font-size: 18px;
   font-weight: normal;
   color: white;
-  margin: 0 0 16px;
+  padding: 0;
+  list-style: none;
 }
 
-.footer__column_content_social {
-  display: flex;
-  flex-direction: column;
+.footer__column-links:last-child {
+  margin: 0 0 16px;
 }
 
 .footer__social-icon {

@@ -304,7 +304,6 @@
   display: flex;
   justify-content: space-between;
   margin: 60px 0 40px;
-  border: 1px solid red;
 }
 
 .logo_place_footer {
@@ -314,7 +313,6 @@
 .footer__column {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
 }
 
 .footer__column_content_copyright {

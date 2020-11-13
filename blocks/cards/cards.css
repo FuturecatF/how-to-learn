@@ -2,8 +2,7 @@
   padding: 0;
   list-style: none;
   min-width: 920px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
 }

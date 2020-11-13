@@ -3,11 +3,3 @@
   height: 316px;
   border: none;
 }
-
-li .video__iframe {
-  margin: 0 20px 0 0;
-
-}
-li:last-child .video__iframe {
-  margin: 0;
-}

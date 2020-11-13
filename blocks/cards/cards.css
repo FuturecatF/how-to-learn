@@ -1,8 +1,12 @@
 .cards {
   padding: 0;
   list-style: none;
-  min-width: 920px;
+  width: 920px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 0 auto;
+  column-gap: 100px;
+  row-gap: 60px;
+  margin: 60px auto 0;
 }
+
+/* через грид оказалось гораздо проще все сделать */

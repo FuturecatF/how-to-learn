@@ -3,11 +3,11 @@
   text-decoration: none;
   z-index: 2;
   opacity: 1;
+  transition: opacity ease-out 1s;
 }
 
 .header__link:hover {
   opacity: 0.5;
-  transition: opacity ease-out 1s;
 }
 
 .header__link::after {

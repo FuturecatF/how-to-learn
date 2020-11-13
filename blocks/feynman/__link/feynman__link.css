@@ -9,11 +9,11 @@
   font-weight: normal;
   z-index: 1;
   opacity: 1;
+  transition: opacity ease-out 1s;
 }
 
 .feynman__link:hover {
   opacity: 0.5;
-  transition: opacity ease-out 1s;
 }
 
 .feynman__link::after {
